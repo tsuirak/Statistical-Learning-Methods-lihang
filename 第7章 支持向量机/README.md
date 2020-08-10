@@ -4,12 +4,12 @@
 
 - 有监督学习
 - 分类问题
-- $$Vapnik$$
+- $Vapnik$
 - 线性可分支持向量机/线性支持向量机/非线性支持向量机
 
 ## 什么是支持向量机呢？
 
-$$Support\space Vector\space Machine$$：支持向量机
+$Support\space Vector\space Machine$：支持向量机
 
 
 
@@ -23,19 +23,19 @@ $$Support\space Vector\space Machine$$：支持向量机
 
 支持向量机的学习方法由简至繁：
 
-- 线性可分支持向量机$$(linear \space support\space vector\space machine\space in\space linearly\space separable\space case)$$
-- 线性支持向量机$$(linear \space support\space vector\space machine)$$
-- 非线性支持向量机$$(non-linear \space support\space vector\space machine)$$
+- 线性可分支持向量机$(linear \space support\space vector\space machine\space in\space linearly\space separable\space case)$
+- 线性支持向量机$(linear \space support\space vector\space machine)$
+- 非线性支持向量机$(non-linear \space support\space vector\space machine)$
 
 
 
 根据训练数据：
 
-- 当训练数据**线性可分**时，通过**硬间隔最大化**$$(hard \space margin \space maximization)$$，学习一个线性的分类器，即线性可分支持向量机，又称为硬间隔支持向量机
+- 当训练数据**线性可分**时，通过**硬间隔最大化**$(hard \space margin \space maximization)$，学习一个线性的分类器，即线性可分支持向量机，又称为硬间隔支持向量机
 
-- 当训练数据**近似可分**时，通过**软间隔最大化**$$(soft \space margin \space maximization )$$，学习一个线性的分类器，即线性支持向量机，又称为软间隔支持向量机
+- 当训练数据**近似可分**时，通过**软间隔最大化**$(soft \space margin \space maximization )$，学习一个线性的分类器，即线性支持向量机，又称为软间隔支持向量机
 
-- 当训练数据**不可分**时，通过**核技巧**$$(kernel \space trick)$$，学习非线性支持向量机
+- 当训练数据**不可分**时，通过**核技巧**$(kernel \space trick)$，学习非线性支持向量机
 
 
 
@@ -49,7 +49,7 @@ $$Support\space Vector\space Machine$$：支持向量机
 
 你可能已经能够想出类似与下方图片的划分方法。很显然，在绿线左边的是黑色的类，而右边的是蓝色的类。
 
-这就是$$SVM$$做的事情（在多维平面上分离各组类），它能够找到一个**超平面**（此处为直线），有效的将两组类区分。绿色的直线即为我们找到的支持向量的分类器。当然这种划分方式也称作为**硬间隔**，因为我们不允许有训练数据出现错误分类的情况～
+这就是$SVM$做的事情（在多维平面上分离各组类），它能够找到一个**超平面**（此处为直线），有效的将两组类区分。绿色的直线即为我们找到的支持向量的分类器。当然这种划分方式也称作为**硬间隔**，因为我们不允许有训练数据出现错误分类的情况～
 
 ![Sample cut to divide into two classes](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/Sample cut to divide into two classes.png)
 
@@ -89,7 +89,7 @@ $$Support\space Vector\space Machine$$：支持向量机
 
 
 
-我们的解决方式是增加一个维度（即我们现在将数据放置于x-y-z系），我们将它记为z轴，假设$$z=x^2+y^2$$。并变换到z-y系下。在这种情况下，我们可以轻松地找到一个**超平面**将数据有效的区分为两组类。
+我们的解决方式是增加一个维度（即我们现在将数据放置于x-y-z系），我们将它记为z轴，假设$z=x^2+y^2$。并变换到z-y系下。在这种情况下，我们可以轻松地找到一个**超平面**将数据有效的区分为两组类。
 
 
 
@@ -205,14 +205,14 @@ $$Support\space Vector\space Machine$$：支持向量机
 
 ### Kernels
 
-**核函数**$$(kernel \space function)$$系统地在更高维度上找到线性分类器
+**核函数**$(kernel \space function)$系统地在更高维度上找到线性分类器
 
 
 
-#### 1.**多项式核**$$(Polynomial \space Kernel)$$
+#### 1.**多项式核**$(Polynomial \space Kernel)$
 
 - 参数d，代表了多元函数的维度
-- $$K(x,x_i)=(x\cdot x_i+1)^d$$
+- $K(x,x_i)=(x\cdot x_i+1)^d$
 
 
 
@@ -224,7 +224,7 @@ $$Support\space Vector\space Machine$$：支持向量机
 
 ![polynomial kernel 1a](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/polynomial kernel 1a.png)
 
-##### 1.2当d=2时，即先将x轴上的映射至y轴，即$$y=x^2$$，多元核在2-维度上计算样本点间的距离
+##### 1.2当d=2时，即先将x轴上的映射至y轴，即$y=x^2$，多元核在2-维度上计算样本点间的距离
 
 ![polynomial kernel 2](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/polynomial kernel 2.png)
 
@@ -248,10 +248,10 @@ $$Support\space Vector\space Machine$$：支持向量机
 
 
 
-#### 2.**高斯径向基函数核**$$(Radial \space Basis \space Kernel)$$
+#### 2.**高斯径向基函数核**$(Radial \space Basis \space Kernel)$
 
 - 简称$$RBK$$
-- $$K(x,x_i)=exp(-\frac{||x-x_i||^2_2}{2\sigma^2})$$
+- $K(x,x_i)=exp(-\frac{||x-x_i||^2_2}{2\sigma^2})$
 
 很遗憾，$$RBK$$是通过提升至无限维度来寻找支持向量分类器，我们将不能清楚地看到直观的例子
 
@@ -259,7 +259,7 @@ $$Support\space Vector\space Machine$$：支持向量机
 
 ### !!!注意
 
-实际上，我们并没有将数据映射至高维度，而是直接在高维度上进行计算，这种技巧称为$$Kernel \space Trick$$
+实际上，我们并没有将数据映射至高维度，而是直接在高维度上进行计算，这种技巧称为$Kernel \space Trick$
 
 
 
@@ -285,7 +285,7 @@ $$Support\space Vector\space Machine$$：支持向量机
 
 ### Gamma
 
-$$\gamma$$参数定义了每个样本点在距离上的影响力，换句话说，较低的$$\gamma$$值在计算划分时应考虑远离划分线的点，而较高的$$\gamma$$值将会考虑接近划分线的点。
+$\gamma$参数定义了每个样本点在距离上的影响力，换句话说，较低的$\gamma$值在计算划分时应考虑远离划分线的点，而较高的$\gamma$值将会考虑接近划分线的点。
 
 
 

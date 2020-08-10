@@ -136,17 +136,17 @@ $$
 
 
 
-#### 山鸢花（Iris Setosa）$$label=0$$：
+#### 山鸢花（Iris Setosa）$label=0$：
 
 <img src="fig/iris_seto.jpg" style="zoom:50%;" />
 
 
 
-#### 变色鸢花（Iris Versicolour）$$label=1$$：
+#### 变色鸢花（Iris Versicolour）$label=1$：
 
 <img src="fig/iris_versicolor.jpg" style="zoom:30%;" />
 
-#### 维吉尼亚鸢尾花（Iris Virginica）$$lable=2$$：
+#### 维吉尼亚鸢尾花（Iris Virginica）$lable=2$：
 
 <img src="fig/iris_virginica.jpg" style="zoom:6%;" />
 
