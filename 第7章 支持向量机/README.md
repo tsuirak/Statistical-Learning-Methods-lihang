@@ -277,7 +277,7 @@ $$Support\space Vector\space Machine$$：支持向量机
 
 
 
-第一种分类方式即是$$C$$值较高的结果：
+第二种分类方式即是$$C$$值较高的结果：
 
 ![image 2](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/image 2.png)
 
