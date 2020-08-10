@@ -11,6 +11,8 @@
 
 
 
+##### 推荐使用[typora](https://www.typora.io/)打开*markdown*文件
+
 ##### 有各种问题欢迎联系我，或则在Issues里面提出
 
 ## 目录
@@ -33,5 +35,5 @@
 
 ##### 邮箱：tsuiraku@126.com
 
-##### 公众号：tsuiraku
+##### 博客：
 
