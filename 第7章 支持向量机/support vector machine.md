@@ -590,7 +590,7 @@ svm.score(X_test, y_test)
 
 
 
-# [以上数据及源代码请点击这里]()
+# [以上数据及源代码请点击这里](https://github.com/tsuirak/Statistical-Learning-Methods-lihang)
 
 ### 希望各位客官大人能够给我一个小小的star!​
 
