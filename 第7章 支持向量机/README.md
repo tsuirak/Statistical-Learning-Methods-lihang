@@ -45,13 +45,13 @@ $Support\space Vector\space Machine$：支持向量机
 
 假设现在二维平面上有两组不同标签的数据，你能够区分这两组数据吗？
 
-![Draw a line that separates black circles and blue squares](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/Draw a line that separates black circles and blue squares.png)
+![Draw a line that separates black circles and blue squares](fig/Draw a line that separates black circles and blue squares.png)
 
 你可能已经能够想出类似与下方图片的划分方法。很显然，在绿线左边的是黑色的类，而右边的是蓝色的类。
 
 这就是$SVM$做的事情（在多维平面上分离各组类），它能够找到一个**超平面**（此处为直线），有效的将两组类区分。绿色的直线即为我们找到的支持向量的分类器。当然这种划分方式也称作为**硬间隔**，因为我们不允许有训练数据出现错误分类的情况～
 
-![Sample cut to divide into two classes](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/Sample cut to divide into two classes.png)
+![Sample cut to divide into two classes](fig/Sample cut to divide into two classes.png)
 
 
 
@@ -61,7 +61,7 @@ $Support\space Vector\space Machine$：支持向量机
 
 
 
-![What in this case](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/What in this case.png)
+![What in this case](fig/What in this case.png)
 
 
 
@@ -69,9 +69,9 @@ $Support\space Vector\space Machine$：支持向量机
 
 
 
-第一种划分：![image 1](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/image 1.png)
+第一种划分：![image 1](fig/image 1.png)
 
-第二种划分：![image 2](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/image 2.png)
+第二种划分：![image 2](fig/image 2.png)
 
 
 
@@ -85,7 +85,7 @@ $Support\space Vector\space Machine$：支持向量机
 
 
 
-![Can you draw a separating line in this plane](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/Can you draw a separating line in this plane.png)
+![Can you draw a separating line in this plane](fig/Can you draw a separating line in this plane.png)
 
 
 
@@ -93,7 +93,7 @@ $Support\space Vector\space Machine$：支持向量机
 
 
 
-![plot of zy axis A separation can be made here](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/plot of zy axis A separation can be made here.png)
+![plot of zy axis A separation can be made here](fig/plot of zy axis A separation can be made here.png)
 
 
 
@@ -101,7 +101,7 @@ $Support\space Vector\space Machine$：支持向量机
 
 
 
-![Transforming back to x-y plane a line transforms to circle.](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/Transforming back to x-y plane a line transforms to circle..png)
+![Transforming back to x-y plane a line transforms to circle.](fig/Transforming back to x-y plane a line transforms to circle..png)
 
 
 
@@ -137,7 +137,7 @@ $Support\space Vector\space Machine$：支持向量机
 
 
 
-![possible hyperplanes](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/possible hyperplanes.png)
+![possible hyperplanes](fig/possible hyperplanes.png)
 
 
 
@@ -145,7 +145,7 @@ $Support\space Vector\space Machine$：支持向量机
 
 
 
-![optimal hyperplane](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/optimal hyperplane.png)
+![optimal hyperplane](fig/optimal hyperplane.png)
 
 
 
@@ -165,11 +165,11 @@ $Support\space Vector\space Machine$：支持向量机
 
 
 
-![hard or soft example 1](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/hard or soft example 1.png)
+![hard or soft example 1](fig/hard or soft example 1.png)
 
 我们通过**支持向量**，找到间隔最大的地方，我们称此时的间隔为**最大间隔**，即
 
-![hard max marigin](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/hard max margin.png)
+![hard max marigin](fig/hard max margin.png)
 
 因为此时训练数据没有误分类的点，故称为**硬间隔**。
 
@@ -177,19 +177,19 @@ $Support\space Vector\space Machine$：支持向量机
 
 再观察下面这张图，当数据依旧使用**最大间隔**划分时
 
-![hard or soft example 2](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/hard or soft example 2.png)
+![hard or soft example 2](fig/hard or soft example 2.png)
 
-![hard max margin 2](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/hard max margin 2.png)
+![hard max margin 2](fig/hard max margin 2.png)
 
 我们清楚地发现，此时**最大间隔**的方法并不适合这种情况，因为红色的点显然更倾向于绿色，但我们却将它分类为红色。
 
 那么，我们该如何做呢？如果我们把**间隔**置于下图所示，即允许存在误分类的点
 
-![soft margin example](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/soft margin example.png)
+![soft margin example](fig/soft margin example.png)
 
 那么此时我们称这种方法为**软间隔**
 
-![soft margin](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/soft margin.png)
+![soft margin](fig/soft margin.png)
 
 
 
@@ -199,7 +199,7 @@ $Support\space Vector\space Machine$：支持向量机
 
 超平面是决策边界，将帮助我们区分数据点。数据落于超平面的两侧将被区分为不同的类别。当然，数据样本的特征数量将决定超平面的维度，比如特征数量为2时，超平面是直线；特征数量是3时，超平面变成了2维的平面；然而，当特征数量大于3时，我们很难在空间上想象它的形状。
 
-![dimension hyperplane](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/dimension hyperplane.png)
+![dimension hyperplane](fig/dimension hyperplane.png)
 
 
 
@@ -218,27 +218,27 @@ $Support\space Vector\space Machine$：支持向量机
 
 ##### 1.1当d=1时，多元核在1-维度上计算样本点间的距离
 
-![polynomial kernel 1](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/polynomial kernel 1.png)
+![polynomial kernel 1](fig/polynomial kernel 1.png)
 
 ##### 这将有助于我们找到支持向量的分类器，即
 
-![polynomial kernel 1a](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/polynomial kernel 1a.png)
+![polynomial kernel 1a](fig/polynomial kernel 1a.png)
 
 ##### 1.2当d=2时，即先将x轴上的映射至y轴，即$y=x^2$，多元核在2-维度上计算样本点间的距离
 
-![polynomial kernel 2](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/polynomial kernel 2.png)
+![polynomial kernel 2](fig/polynomial kernel 2.png)
 
 ##### 这将有助于我们找到支持向量的分类器，即
 
-##### ![polynomial kernel 2a](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/polynomial kernel 2a.png)
+##### ![polynomial kernel 2a](fig/polynomial kernel 2a.png)
 
 ##### 1.3当d=3时，多元核在3-维度上计算样本点间的距离
 
-![polynomial kernel 3](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/polynomial kernel 3.png)
+![polynomial kernel 3](fig/polynomial kernel 3.png)
 
 ##### 这将有助于我们找到支持向量的分类器，即
 
-##### ![polynomial kernel 3a](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/polynomial kernel 3a.png)
+##### ![polynomial kernel 3a](fig/polynomial kernel 3a.png)
 
 ##### 当d大于或则等于4的时，我们将在更高的维度即超平面上找到支持向量机的分类器
 
@@ -273,13 +273,13 @@ $Support\space Vector\space Machine$：支持向量机
 
 第一种分类方式即是$$C$$值较低的结果：
 
-![image 1](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/image 1.png)
+![image 1](fig/image 1.png)
 
 
 
 第二种分类方式即是$$C$$值较高的结果：
 
-![image 2](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/image 2.png)
+![image 2](fig/image 2.png)
 
 
 
@@ -289,9 +289,9 @@ $\gamma$参数定义了每个样本点在距离上的影响力，换句话说，
 
 
 
-![Low gamma](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/Low gamma.png)
+![Low gamma](fig/Low gamma.png)
 
-![High gamma](/Users/nanase/Documents/ML/统计学习方法-李航/第7章 支持向量机/fig/High gamma.png)
+![High gamma](fig/High gamma.png)
 
 
 
@@ -587,12 +587,6 @@ svm = SVM(max_iter=1000)
 svm.fit(X_train, y_train)
 svm.score(X_test, y_test)
 ```
-
-
-
-# [以上数据及源代码请点击这里](https://github.com/tsuirak/Statistical-Learning-Methods-lihang)
-
-### 希望各位客官大人能够给我一个小小的star!​
 
 
 

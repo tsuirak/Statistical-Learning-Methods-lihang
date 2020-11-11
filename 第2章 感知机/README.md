@@ -20,7 +20,7 @@
 
 
 
-感知机是二类分类的线性分类模型，其输入为实例的特征向量$T$，输出为实例的类别$y$    即：
+感知机是二分类的线性分类模型，其输入为实例的特征向量$T$，输出为实例的类别$y$    即：
 
 
 $$
@@ -138,17 +138,17 @@ $$
 
 #### 山鸢花（Iris Setosa）$label=0$：
 
-<img src="fig/iris_seto.jpg" style="zoom:50%;" />
+<img src="fig/iris_seto.jpg" style="zoom:30%;" />
 
 
 
 #### 变色鸢花（Iris Versicolour）$label=1$：
 
-<img src="fig/iris_versicolor.jpg" style="zoom:30%;" />
+<img src="fig/iris_versicolor.jpg" style="zoom:20%;" />
 
 #### 维吉尼亚鸢尾花（Iris Virginica）$lable=2$：
 
-<img src="fig/iris_virginica.jpg" style="zoom:6%;" />
+<img src="fig/iris_virginica.jpg" style="zoom:15%;" />
 
 
 
@@ -292,12 +292,6 @@ plt.xlabel('sepal length')
 plt.ylabel('sepal width')
 plt.legend()
 ```
-
-
-
-# [以上数据及源代码请点击这里](https://github.com/tsuirak/Statistical-Learning-Methods-lihang)
-
-### 希望各位客官大人能够给我一个小小的star!​
 
 
 
