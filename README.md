@@ -3,23 +3,23 @@
 ## 简介
 #### 《统计学习方法》
 
-- ##### 算法讲解
+- 学习笔记和总结
 
-- ##### Sklearn实现
+- Sklearn + Numpy 实现算法
+- 文件目录结构
 
-- ##### Python实现
+```
+├─Statistical-Learning-Methods-lihang
+  ├─Labs # 算法实现代码
+```
 
 
 
-##### 推荐使用[typora](https://www.typora.io/)打开*markdown*文件
+##### 由于 github 不支持Latex公式可阅读性较差，请访问我的 [语雀笔记](https://www.yuque.com/tsuiraku/cz9y9u) 进行阅读
 
-##### 或则访问我的 [csdn](https://blog.csdn.net/m0_49337600?spm=1010.2135.3001.5113) 博客进行观看
-
-##### 有各种问题欢迎联系我，或则在Issues里面提出
+有各种问题欢迎联系我，或则在Issues里面提出
 
 ## 目录
-
-##### 目前已经更新
 
 - ##### 感知机
 
@@ -33,8 +33,9 @@
 
 - ##### 支持向量机
 
+- ##### 常见机器学习问题
+
 ## 联系方式
 
-##### 邮箱：tsuiraku@126.com
-##### ps：吐槽一下，最近事情真的好多，我想抽时间来写总结都找不出来！！！考一次试又贼贵！！！
+邮箱：tsuiraku@126.com
 
